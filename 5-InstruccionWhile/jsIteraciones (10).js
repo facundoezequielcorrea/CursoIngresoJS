@@ -1,9 +1,20 @@
+/*Enunciado:
+Al presionar el botón pedir números hasta que el usuario quiera, mostar:
+1-Suma de los negativos. 
+2-Suma de los positivos. 
+3-Cantidad de positivos. 
+4-Cantidad de negativos. 
+5-Cantidad de ceros. 
+6-Cantidad de números pares. 
+7-Promedio de positivos. 
+8-Promedios de negativos. 
+9-Diferencia entre positivos y negativos, (positvos-negativos).*/
+
 function Mostrar()
 {
-
+//declarar contadores y variables
 	var contadorpos=0;
 	var contadorneg=0;
-	//declarar contadores y variables 
 	var negativo=0;
 	var positivo=0;
 	var ceros;
@@ -25,6 +36,7 @@ function Mostrar()
 
 			contadorpos++
 			positivo=positivo+numero
+			
 	}
 
 
