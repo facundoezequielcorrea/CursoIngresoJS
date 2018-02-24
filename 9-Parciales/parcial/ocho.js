@@ -23,16 +23,16 @@ function Mostrar()
 			nota=parseInt(nota);
 		}
 		sexo= prompt ("por favor ingrese sexo del alumno");
-		while (sexo!="f" && sexo!="m")
+		while (sexo!="f" || sexo!="m")
 		{
 			sexo= prompt ("sexo ingresado incorrecto por favor ingrese sexo del alumno nuevamente");
 		}
 		if (sexo=="f")
 		{
-			cantmujer++
+			cantmujer++;
 		}else
 		{
-			canthombre++
+			canthombre++;
 		}
 		acumnota=acumnota+nota;
 
