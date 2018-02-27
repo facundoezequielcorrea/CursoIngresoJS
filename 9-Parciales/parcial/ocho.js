@@ -47,11 +47,11 @@ function Mostrar()
 			nota=parseInt(nota);
 		}
 		sexo= prompt ("por favor ingrese sexo del alumno");
-		while (sexo!="f" || sexo!="m")
+		while (sexo!="F" && sexo!="M")
 		{
 			sexo= prompt ("sexo ingresado incorrecto por favor ingrese sexo del alumno nuevamente");
 		}
-		if (sexo=="f")
+		if (sexo=="F")
 		{
 			cantmujer++;
 			notamujer=notamujer+nota;
@@ -60,9 +60,11 @@ function Mostrar()
 			canthombre++;
 		}
 		edad= prompt ("por favor ingrese la edad del alumno");
+		edad= parseInt (edad);
 		while (edad<0 || edad>100)
 		{
 			edad= prompt ("edad incorrecta por favor ingrese la edad del alumno nuevamente");
+			edad= parseInt (edad);
 		}
 		if (sexo=="m" && nota<4)
 		{
